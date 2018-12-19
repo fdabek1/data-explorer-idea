@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../../../favicon.ico">-->
+
+    <title>Parser</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/btn-xs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        /* Move down content because we have a fixed navbar that is 3.5rem tall */
+        body {
+            padding-top: 3.5rem;
+        }
+
+        .hover-cursor {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card col-sm m-0 p-0">
+                <div class="card-body" style="height: 100vh; overflow-y: scroll;">
+                    <h5 class="card-title">
+                        <i class="fas fa-angle-right hover-cursor"></i> Test A
+                        <small class="text-muted">(1/5)</small>
+                    </h5>
+
+                    <h5 class="card-title">
+                        <i class="fas fa-angle-down hover-cursor"></i> Test B
+                        <small class="text-muted">(1/5)</small>
+                    </h5>
+
+                    <h5 class="card-title ml-3">
+                        <i class="fas fa-angle-right hover-cursor"></i> Field 1
+                    </h5>
+                    <h5 class="card-title ml-3">
+                        <i class="fas fa-angle-right hover-cursor"></i> Field 2
+                    </h5>
+                    <h5 class="card-title ml-3">
+                        <i class="fas fa-angle-down hover-cursor"></i> Field 3
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-sm">
+                <div class="card-body text-center">
+                    <div class="form-group">
+                        <label>
+                            <textarea class="form-control" rows="5" cols="45"></textarea>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Run</button>
+                </div>
+            </div>
+            <div class="card col-sm">
+                <div class="card-body">
+
+                    <div class="card ml-5 border-0">
+                        <div class="card-body p-1">
+                            <div class="card bg-light">
+                                <div class="card-body p-1">
+                                    7/7
+                                </div>
+                            </div>
+
+
+                            <table class="table table-bordered table-sm mt-2">
+                                <tbody>
+                                <tr>
+                                    <th scope="col" class="text-center w-25">Computed</th>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col" class="text-center w-25">Comment</th>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Reason</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                           id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Default radio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                           id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Second default radio
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Notes</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+
+                            True Raw
+                            <br>
+                            True Computed
+                            <br>
+                            True Comment
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Configure Parser</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>First One</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">dev.json</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">1,000 patients
+                                <small>(200 new)</small>
+                            </p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">mixed.json</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">other.json</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                    </div>
+
+                    <h4 class="mt-4">Second One</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">dev.json</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">1,000 patients
+                                <small>(200 new)</small>
+                            </p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">name.json</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">something.json</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // $('#modal').modal();
+    });
+</script>
+</body>
+</html>
